@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #343541;
+  color: #fff;
+}
+*{
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  gap: 50px;
+}
+.chatbox{
+  display: block;
+  text-align: left;
+  width: 60vw;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-block:visible ;
+  
+}
+.chatbox::-webkit-scrollbar{
+  display: none;
+}
+.avatar{
+  min-width: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cf3eff;
+  padding: 10px;
+  color: #21222a;
+}
+.chat-content{
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.ai-chat{
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+.ai-chat .avatar{
+  background-color: #3effb5;
+}
+
+.input-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #343541;
+}
+.input-holder form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.input-holder form input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  line-height: 40px;
+  font-size: 17px;
+  outline: none;
+  color: #fff;
+  
+}
